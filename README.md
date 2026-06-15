@@ -1,3 +1,4 @@
+![Grid Down Field Guide](Screenshot%202026-06-15%20at%2013-38-58%20KD9HJN%20%E2%80%94%20Grid%20Down%20Field%20Guide.png)
 Grid Down Field Guide — Overview
 A single-file, offline-capable HTML field reference tool for amateur radio operators, EMCOMM volunteers, and preparedness-minded communicators.
 Designed for one scenario: you have a radio, some wire, and you need to get on the air — now.
