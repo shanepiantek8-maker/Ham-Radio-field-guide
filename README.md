@@ -9,3 +9,6 @@ Every antenna type includes matching transformer guidance — which balun or UnU
 A coax loss calculator covers six common cable types including unknown/mystery coax, showing dB loss and actual watts reaching the antenna at common power levels — useful for evaluating boneyard finds at hamfests.
 A field expedient SWR check guide covers how to evaluate antenna performance using only your radio when no test equipment is available.
 One file. No internet required. Works on any device.
+## Download
+
+[⬇️ Download Grid Down Field Guide v10.6](https://github.com/shanepiantek8-maker/Ham-Radio-field-guide/releases/latest/download/grid-down-field-guide-v10.6.html)
