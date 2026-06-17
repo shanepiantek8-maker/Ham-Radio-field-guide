@@ -221,7 +221,7 @@
 <header>
   <div class="callsign">KD9HJN — Echo Base</div>
   <h1>GRID DOWN<br>FIELD GUIDE</h1>
-  <div class="subtitle">Field-Expedient Wire Antenna Reference · v10.6</div>
+  <div class="subtitle">Field-Expedient Wire Antenna Reference · v10.7</div>
   <div class="header-btns">
     <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">☀ LIGHT MODE</button>
     <button class="theme-toggle" onclick="printAntenna()">🖨 PRINT CARD</button>
@@ -230,7 +230,7 @@
 <div class="container">
   <!-- Print-only header — hidden on screen -->
   <div class="print-header" style="text-align:center;padding:8px 0 16px;border-bottom:2px solid #333;margin-bottom:16px;">
-    <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;">KD9HJN — Grid Down Field Guide v10.5</div>
+    <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;">KD9HJN — Grid Down Field Guide v10.7</div>
     <div id="printAntName" style="font-size:18px;font-weight:bold;margin:4px 0;"></div>
     <div id="printFreqLine" style="font-size:11px;"></div>
   </div>
@@ -385,7 +385,7 @@ const ANTENNAS=[
 Hang horizontal between two trees, as high as possible.
 <span class="b">NVIS:</span> Hang ≤0.1λ high (≤45ft on 40m) for regional 0–300 mi coverage.
 <span class="g">DX:</span> Hang as high as possible for low-angle radiation skip.
-Usable on harmonic frequencies. Velocity factor ~0.95 applied.
+Usable on harmonic frequencies. Velocity factor selectable above — insulated copper wire is typically only 1-2% shorter than bare, per N6LF NEC modeling/bench testing (QEX Mar/Apr 2018).
 <span class="a">60m note:</span> 5.357 MHz targets Ch.3 digital watering hole (5358.5 kHz center). Wire will be slightly long — trim or use ATU.`,
   dims:f=>{const t=safeDiv(468,f),l=t/2;return[{label:'TOTAL LENGTH',val:t,sub:'each leg = '+fmt(l)},{label:'EACH LEG',val:l,sub:'feed at center'}];},
   diagram:(f,u)=>diagramDipole(f,u),
@@ -612,13 +612,13 @@ Hang vertically from top — omnidirectional vertical pattern.
 let freq=14.074,unit='ft',antIdx=0,activeBand=null,vfIdx=0;
 
 const VF_OPTIONS=[
-  {label:'BARE',sub:'Bare copper',vf:0.95,
+  {label:'BARE',sub:'Bare copper',vf:1.00,
    examples:'Bare copper wire · Military WD-1 · Magnet wire · Thermostat wire'},
-  {label:'THIN',sub:'Thin coat 0.93',vf:0.93,
+  {label:'THIN',sub:'Thin coat ~1%',vf:0.99,
    examples:'Speaker wire · Extension cord inner · Lamp/zip cord · Phone wire solid core'},
-  {label:'STD PVC',sub:'Standard 0.91',vf:0.91,
+  {label:'STD PVC',sub:'Standard ~1.5%',vf:0.985,
    examples:'Automotive hookup · Marine tinned PVC · THHN building wire · Christmas light wire'},
-  {label:'HEAVY',sub:'Heavy jacket 0.88',vf:0.88,
+  {label:'HEAVY',sub:'Heavy jacket ~2%',vf:0.98,
    examples:'Welding cable · Heavy rubber jacket · Silicone flex wire · Ribbon cable'},
 ];
 
@@ -634,7 +634,8 @@ function buildVF(){
   const v=VF_OPTIONS[vfIdx];
   document.getElementById('vfNote').innerHTML=
     `<span style="color:var(--amber)">VF ${v.vf} · ${v.sub}</span><br>${v.examples}<br><br>`+
-    `<span style="color:#5a6a50">⚠ Unknown wire? Use STD PVC (0.91) — keeps wire slightly long. Easier to trim than add.</span>`;
+    `<span style="color:#5a6a50">⚠ Unknown wire? Use STD PVC (0.985) — keeps wire slightly long. Easier to trim than add.<br>`+
+    `Values per N6LF NEC modeling + bench testing, QEX Mar/Apr 2018 — insulation shortens resonant length ~1-2%, not the 5-12% often assumed.</span>`;
 }
 
 
