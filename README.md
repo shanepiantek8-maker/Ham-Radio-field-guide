@@ -11,4 +11,4 @@ A field expedient SWR check guide covers how to evaluate antenna performance usi
 One file. No internet required. Works on any device.
 ## Download
 
-[⬇️ Download Grid Down Field Guide v10.7](https://github.com/shanepiantek8-maker/Ham-Radio-field-guide/releases/latest/download/grid-down-field-guide-v10.7.html)
+[💾 Download Grid Down Field Guide v10.7](https://raw.githubusercontent.com/shanepiantek8-maker/Ham-Radio-field-guide/main/grid-down-field-guide-v10.7.html)
