@@ -1,14 +1,56 @@
-![Grid Down Field Guide](Screenshot%202026-06-15%20at%2013-38-58%20KD9HJN%20%E2%80%94%20Grid%20Down%20Field%20Guide.png)
-Grid Down Field Guide — Overview
-A single-file, offline-capable HTML field reference tool for amateur radio operators, EMCOMM volunteers, and preparedness-minded communicators.
-Designed for one scenario: you have a radio, some wire, and you need to get on the air — now.
-What it does:
-Calculates wire lengths for 10 antenna types including dipoles, inverted-V, end-fed half-wave, random wire, vertical, sloper, OCFD, fan dipole, double bazooka, and the military-style 292 jungle GP. All calculations adjust automatically for real-world wire insulation via selectable velocity factor — useful when building from whatever wire is available at a hamfest, hardware store, or parts bin.
-For the inverted-V it calculates exact stake placement distances for DX, regional, and NVIS deployment modes. For the 292 jungle GP it outputs all six measurements needed to build the antenna in the field using only natural materials as spreaders.
-Every antenna type includes matching transformer guidance — which balun or UnUn, what ratio, whether an ATU is needed — plus plain-language field notes covering deployment, radiation characteristics, and use cases.
-A coax loss calculator covers six common cable types including unknown/mystery coax, showing dB loss and actual watts reaching the antenna at common power levels — useful for evaluating boneyard finds at hamfests.
-A field expedient SWR check guide covers how to evaluate antenna performance using only your radio when no test equipment is available.
-One file. No internet required. Works on any device.
-## Download
+# Grid Down Field Guide
 
-[💾 Download Grid Down Field Guide v10.7](https://raw.githubusercontent.com/shanepiantek8-maker/Ham-Radio-field-guide/main/grid-down-field-guide-v10.7.html)
+**Field-Expedient Wire Antenna Reference & Calculator** — **v11.3**
+
+A single-file, fully offline tactical HF antenna tool designed for real-world use in austere, grid-down, and portable amateur radio environments (POTA, SOTA, EMCOMM, Field Day, disaster response).
+
+![Screenshot](Screenshot%202026-06-15%20at%2013-38-58%20KD9HJN%20%E2%80%94%20Grid%20Down%20Field%20Guide.png)
+
+## Features
+
+- Accurate calculations for **12+ antenna types**: Dipole, Inverted-V, EFHW, Quarter-Wave Vertical, Jungle GP/292, Full-Wave Loop, Delta Loop, OCFD, Fan Dipole, Sloper, Double Bazooka, J-Pole, Random Wire
+- Realistic **Velocity Factor** handling (N6LF-based, 0.98–1.00 range)
+- **Coax Feedline Loss Calculator** with hamfest/boneyard guidance (RG-58, RG-8X, RG-213, LMR-400, Mystery Coax)
+- **Field Trim Calculator** — enter measured vs target frequency
+- Inverted-V **stake distance table** for DX / Regional / NVIS
+- Antenna **"Birth Certificate"** deployment log with HTML export
+- Print-optimized reference cards
+- Fully offline & mobile-friendly
+
+## What's New in v11.3
+
+- Major **Coax Calculator** overhaul (button grid + realistic loss tables + unit conversion)
+- Improved **Trim Calculator** reliability and unit sync
+- Smoother mobile experience and dark/light mode consistency
+- Better hamfest/boneyard guidance
+- JavaScript cleanup and performance improvements
+
+## Quick Start
+
+1. Download `grid-down-field-guide-v11.3.html`
+2. Open the file in **any web browser** (no installation required)
+3. Select frequency, wire type, and antenna
+4. Build → Deploy → Log the build
+
+Works completely offline — built for true grid-down resilience.
+
+## Author
+
+**KD9HJN** — Echo Base, Krakow WI / EN53
+
+Made by a ham who actually operates in the field.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contributing
+
+Pull requests and feedback are welcome! Especially interested in:
+- Additional antenna types
+- More coax loss data
+- Real-world field testing reports
+
+---
+
+**73 — Built for operators who go
